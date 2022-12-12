@@ -1,6 +1,12 @@
-# OpenAI API Quickstart - Node.js example app
+# GPT-3 Intent playground demo NodeJS
 
-This is an example pet name generator app used in the OpenAI API [quickstart tutorial](https://beta.openai.com/docs/quickstart). It uses the [Next.js](https://nextjs.org/) framework with [React](https://reactjs.org/). Check out the tutorial or follow the instructions below to get set up.
+This is just a late-night experimentation of trying to use GPT-3 to do some intent classification based off of Open AI pet name generator sample. It uses the [Next.js](https://nextjs.org/) framework with [React](https://reactjs.org/). Follow the instructions below to get set up.
+
+To play with it in the browser, just [click here](https://6392e0b1a063340008498c67--coruscating-parfait-a09abd.netlify.app/).
+
+<img width="568" alt="image" src="https://user-images.githubusercontent.com/4107912/207128572-0f3567de-407f-4713-8955-33b54d11d0ed.png">
+
+To play with new prompts, it is faster to play with them on the [Open AI playground](https://beta.openai.com/playground).
 
 ## Setup
 
