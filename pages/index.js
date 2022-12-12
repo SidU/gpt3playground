@@ -3,7 +3,7 @@ import { useState } from "react";
 import styles from "./index.module.css";
 
 export default function Home() {
-  const [animalInput, setAnimalInput] = useState("");
+  const [userPrompt, setUserPrompt] = useState("");
   const [result, setResult] = useState();
 
   async function onSubmit(event) {
@@ -13,30 +13,30 @@ export default function Home() {
       headers: {
         "Content-Type": "application/json",
       },
-      body: JSON.stringify({ animal: animalInput }),
+      body: JSON.stringify({ userPrompt: userPrompt }),
     });
     const data = await response.json();
     setResult(data.result);
-    setAnimalInput("");
+    setUserPrompt("");
   }
 
   return (
     <div>
       <Head>
         <title>Sid Uppal's Hackery</title>
-        <link rel="icon" href="/dog.png" />
+        <link rel="icon" href="/robot.png" />
       </Head>
 
       <main className={styles.main}>
-        <img src="/dog.png" className={styles.headerimage} />
+        <img src="/robot.png" className={styles.headerimage} />
         <h3>GPT-3 App Intent test</h3>
         <form onSubmit={onSubmit}>
           <input
             type="text"
-            name="animal"
+            name="userPrompt"
             placeholder="Enter your prompt"
-            value={animalInput}
-            onChange={(e) => setAnimalInput(e.target.value)}
+            value={userPrompt}
+            onChange={(e) => setUserPrompt(e.target.value)}
           />
           <input type="submit" value="Process" />
         </form>
