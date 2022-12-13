@@ -41,3 +41,6 @@ To play with new prompts, it is faster to play with them on the [Open AI playgro
    ```
 
 You should now be able to access the app at [http://localhost:3000](http://localhost:3000)! For the full context behind this example app, check out the [tutorial](https://beta.openai.com/docs/quickstart).
+
+# Credits
+Robot image by Julian Roman from the Noun Project 🙏
